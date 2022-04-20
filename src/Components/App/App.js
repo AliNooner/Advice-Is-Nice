@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import allAdviceData from '../../APIcalls';
+import Nav from './Nav/Nav';
 
 
 class App extends Component {
@@ -44,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        <div>Hi!</div>
+        <Route exact path="/" render={() => (<Nav />)} />
       </main>
     )
   }
