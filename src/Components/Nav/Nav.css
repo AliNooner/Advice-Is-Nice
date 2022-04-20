@@ -1,0 +1,39 @@
+.navigation {
+	height: 14vw;
+	background-color: #454545;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title-div {
+	background-color: #454545;
+	color: #f9f5f0;
+}
+
+.title {
+	font-size: 2.5em;
+}
+
+h4 {
+	/* color: #cc7178; */
+	font-size: 1.22em;
+}
+.nav-buttons {
+	border-radius: 0.5em;
+	height: 20em;
+	width: 10em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+  padding-right: 3em;
+  padding-top: 10em;
+}
+
+.favorites-link,
+.home-link {
+  color: white;
+  text-decoration: none;
+}
