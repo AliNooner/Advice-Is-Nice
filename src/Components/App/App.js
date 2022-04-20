@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import allAdviceData from '../../APIcalls';
-import Nav from './Nav/Nav';
+import Nav from '../Nav/Nav'
 
 
 class App extends Component {
@@ -14,20 +14,6 @@ class App extends Component {
       pieceOfAdvice: {}
     }
   }
-
-  // componentDidMount = () => {
-  //   fetchCalls
-  //     .fetchData('allAdvice')
-  //     .then((data) => {
-  //       const newArray = data.map((advice) => {
-  //         advice.isFavorited = false
-  //         advice.key = advice.id
-  //         return advice
-  //       })
-  //       this.setState({allAdvice: newArray})
-  //     })
-  //     .then(() => this.getRandomAdvice(this.state.allAdvice))
-  // }
 
   // getRandomAdvice = (array) => {
   //   const index = Math.floor(Math.random() * array.length)
@@ -45,7 +31,11 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        <Route exact path="/" render={() => (<Nav />)} />
+				<Route
+					exact
+					path='/'
+					render={() => <Nav />}
+				/>
       </main>
     )
   }
