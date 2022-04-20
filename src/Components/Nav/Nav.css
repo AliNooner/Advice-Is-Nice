@@ -23,9 +23,17 @@ h4 {
 .nav-buttons {
 	border-radius: 0.5em;
 	height: 20em;
-	width: 50em;
+	width: 10em;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+  padding-right: 3em;
+  padding-top: 10em;
+}
+
+.favorites-link,
+.home-link {
+  color: white;
+  text-decoration: none;
 }
