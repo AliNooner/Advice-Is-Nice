@@ -4,6 +4,7 @@ import './App.css';
 import allAdviceData from '../../APIcalls';
 import Nav from '../Nav/Nav';
 import DailyAdvice from '../DailyAdvice/DailyAdvice';
+import AllAdvice from '../AllAdvice/AllAdvice';
 
 
 class App extends Component {
