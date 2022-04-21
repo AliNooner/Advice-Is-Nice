@@ -1,6 +1,6 @@
 .navigation {
 	height: 14vw;
-	background-color: #454545;
+	background-color: #a5a58d;
 	padding: 1em;
 	display: flex;
 	align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .title-div {
-	background-color: #454545;
+	background-color: #a5a58d;
 	color: #f9f5f0;
 }
 

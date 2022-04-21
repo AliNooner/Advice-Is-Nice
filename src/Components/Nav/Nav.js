@@ -7,8 +7,8 @@ const Nav = () => {
   return (
     <nav className='navigation'>
       <div className='title-div'>
-        <h1 className='title'>You've Got This</h1>
-        <h4>Advice for your life</h4>
+        <h1 className='title'>The Advice App</h1>
+        <h4>You've got this!</h4>
       </div>
       <div className='nav-buttons'>
       <NavLink to ='/'>
