@@ -11,10 +11,10 @@ const Nav = () => {
         <h4>You've got this!</h4>
       </div>
       <div className='nav-buttons'>
-      <NavLink to ='/'>
+      <NavLink to ='/' style={{textDecoration: 'none'}}>
         <p className='home-link'>Home</p>
       </NavLink>
-      <NavLink to ='/favorites'>
+      <NavLink to ='/favorites' style={{textDecoration: 'none'}}>
         <p className='favorites-link'>Favorites</p>
       </NavLink>
       </div>
