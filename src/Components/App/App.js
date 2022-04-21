@@ -44,9 +44,13 @@ displayAdvice = () => {
 );
 }
 
-// saveToFavorites = () => {
-// 
-// }
+saveToFavorites = () => {
+  return allAdviceData()
+  .then((data) => this.setState({ favorites: data.slip.advice}))
+  .catch((error) =>
+  this.setState({ hasError: true, error: `Oops! Something went wrong!` })
+);
+}
 
 render() {
 return (
