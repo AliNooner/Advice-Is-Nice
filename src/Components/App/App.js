@@ -17,20 +17,7 @@ class App extends Component {
       favorites: []
     }
   }
-
-
-// componentDidMount = () => {
-  // this.displayAdvice()
-  // if(this.displayAdvice()) {
-  //   return allAdviceData()
-  //   .then((data) => this.setState({ singleAdvice: data.slip.advice}))
-  //   .catch((error) =>
-  //   this.setState({ hasError: true, error: `Oops! Something went wrong!` })
-  // );
-//
-  // }
-
-// };
+y
 
 displayAdvice = () => {
   return allAdviceData()
