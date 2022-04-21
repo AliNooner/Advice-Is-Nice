@@ -18,10 +18,6 @@ class App extends Component {
     }
   }
 
-  // getRandomAdvice = (array) => {
-  //   const index = Math.floor(Math.random() * array.length)
-  //   this.setState({pieceOfAdvice: this.state.allAdvice[index]})
-  // }
 
 // componentDidMount = () => {
   // this.displayAdvice()
@@ -44,19 +40,18 @@ displayAdvice = () => {
 );
 }
 
-saveToFavorites = () => {
-  return allAdviceData()
-  .then((data) => this.setState({ favorites: data.slip.advice}))
-  .catch((error) =>
-  this.setState({ hasError: true, error: `Oops! Something went wrong!` })
-);
-}
+
+addFavorite = (newAdvice) => {
+    this.setState({favorites: [...this.state.favorites, newAdvice]})
+  }
+
+
 
 render() {
 return (
   <main className='App'>
     <Nav />
-    <Card singleAdvice={this.state.singleAdvice}/>
+    <Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite}/>
     <button className='advice-button' onClick={this.displayAdvice}>Give me advice</button>
     <Switch>
       <Route
@@ -76,9 +71,7 @@ return (
         path='/favorites'
         render={() => (
           <Favorites
-            // favorites={this.state.favorites}
-            // allCards={this.state.allCards}
-            // changeIcon={this.changeIcon}
+          favorites={this.state.favorites}
           />
         )}
       />
