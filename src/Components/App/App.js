@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import allAdviceData from '../../APIcalls';
 import Nav from '../Nav/Nav';
-import DailyAdvice from '../DailyAdvice/DailyAdvice';
-import AllAdvice from '../AllAdvice/AllAdvice';
+import Card from '../Card/Card';
+import AllCards from '../AllCards/AllCards';
+import Favorites from '../Favorites/Favorites';
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      allAdvice: [],
+      singleAdvice: null,
       isFavorited: false,
-      pieceOfAdvice: {}
+      favorites: []
     }
   }
 
@@ -22,34 +23,44 @@ class App extends Component {
   //   this.setState({pieceOfAdvice: this.state.allAdvice[index]})
   // }
 
-componentDidMount = () => {
-  return allAdviceData()
-    .then((data) => this.setState({ allAdvice: data.slip }))
-    .catch((error) =>
-      this.setState({ hasError: true, error: `Oops! Something went wrong!` })
-    );
-};
+// componentDidMount = () => {
+  // this.displayAdvice()
+  // if(this.displayAdvice()) {
+  //   return allAdviceData()
+  //   .then((data) => this.setState({ singleAdvice: data.slip.advice}))
+  //   .catch((error) =>
+  //   this.setState({ hasError: true, error: `Oops! Something went wrong!` })
+  // );
+//
+  // }
 
+// };
+
+displayAdvice = () => {
+  return allAdviceData()
+  .then((data) => this.setState({ singleAdvice: data.slip.advice}))
+  .catch((error) =>
+  this.setState({ hasError: true, error: `Oops! Something went wrong!` })
+);
+}
+
+// saveToFavorites = () => {
+// 
+// }
 
 render() {
 return (
   <main className='App'>
     <Nav />
-    <Route
-      exact
-      path='/'
-      render={() => <DailyAdvice />}
-    />
+    <Card singleAdvice={this.state.singleAdvice}/>
+    <button className='advice-button' onClick={this.displayAdvice}>Give me advice</button>
     <Switch>
       <Route
         exact
         path='/'
         render={() => (
           <div>
-            <p className='favorite-message-tag'>
-              Click the heart icon to add message to your favorites
-            </p>
-            <AllAdvice
+            <AllCards
               // allBirds={this.state.allBirds}
               // changeIcon={this.changeIcon}
             />
@@ -61,8 +72,8 @@ return (
         path='/favorites'
         render={() => (
           <Favorites
-            // lifers={this.state.lifers}
-            // allBirds={this.state.allBirds}
+            // favorites={this.state.favorites}
+            // allCards={this.state.allCards}
             // changeIcon={this.changeIcon}
           />
         )}
@@ -72,9 +83,6 @@ return (
       <div className='no-match'>404 Error: Sorry, the URL/page you requested was not found.</div>)}
       />
       </Switch>
-    <footer>
-      <img src={logo} alt='Fowl Prowl Logo' id='logo' />
-    </footer>
   </main>
 )
 }
