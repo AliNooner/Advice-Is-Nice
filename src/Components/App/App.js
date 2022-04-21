@@ -47,8 +47,6 @@ return (
         render={() => (
           <div>
             <AllCards
-              // allBirds={this.state.allBirds}
-              // changeIcon={this.changeIcon}
             />
           </div>
         )}

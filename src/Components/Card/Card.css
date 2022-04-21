@@ -17,9 +17,10 @@
   border-style: solid;
 }
 
-/* .advice-button { */
- /* color: pink; */
-/* } */
+.advice-button {
+  width: 10vw;
+  margin-left: 45%;
+}
 
 /* .favorite-message-tag {
   color: pink;
