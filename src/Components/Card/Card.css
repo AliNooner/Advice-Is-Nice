@@ -1,29 +1,27 @@
-.card-container {
+/* .card-container {
   display: flex;
   flex-direction: column;
 }
 
 .card {
-  box-sizing: border-box;
+  box-sizing: border-box; */
   /* border: 3px solid #ffe8d6; */
-  padding: 30px;
+  /* padding: 30px;
   margin: 70px;
   color: white;
   background-color: #ddbea9;
-}
+} */
 
-.save-favorites-button {
-  /* border-radius: 5px;
-  border-style: solid; */
+/* .save-favorites-button {
   height: 5vw;
   width: 10vw;
   margin-left: 45%;
   background-color: #ffe8d6;
   border: none;
   border-radius: 50px;
-}
+} */
 
-.advice-button {
+/* .advice-button {
   height: 5vw;
   width: 10vw;
   margin-left: 46%;
@@ -31,14 +29,13 @@
   border: none;
   border-radius: 50px;
   color: white;
-}
+} */
 
-.single-advice {
+/* .single-advice {
   font-family: 'Anton', sans-serif;
   margin-left: 31vw;
-}
-
-/* .favorite-message-tag {
-  color: pink;
-  justify-content: center;
 } */
+
+.card {
+  border: solid;
+}

@@ -8,7 +8,6 @@ const Nav = () => {
     <nav className='navigation'>
       <div className='title-div'>
         <h1 className='title'>The Advice App</h1>
-        <h4>You've got this!</h4>
       </div>
       <div className='nav-buttons'>
       <NavLink to ='/' style={{textDecoration: 'none'}}>

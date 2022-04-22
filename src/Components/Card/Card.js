@@ -15,9 +15,13 @@ const saveToFavorites = () => {
   return (
     <div className='card'>
       <div className='card-container'>
-      <p className='single-advice'>{singleAdvice}</p>
-      <button className='save-favorites-button' onClick={() => saveToFavorites()} >Save to favorites</button>
-      <button className='advice-button' onClick={displayAdvice}>Advice</button>
+        <div className='single-advice-container'>
+          <p className='single-advice'>{singleAdvice}</p>
+        </div>
+        <div className='button-container'>
+          <button className='advice-button' onClick={displayAdvice}>Advice</button>
+          <button className='save-favorites-button' onClick={() => saveToFavorites()} >Save to favorites</button>
+        </div>
       </div>
     </div>
 
