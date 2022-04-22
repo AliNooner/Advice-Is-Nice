@@ -38,6 +38,7 @@ render() {
 return (
   <main className='App'>
     <Nav />
+    <p className='instructions'>Click the button to see advice</p>
     <Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite}/>
     <button className='advice-button' onClick={this.displayAdvice}>Give me advice</button>
     <Switch>

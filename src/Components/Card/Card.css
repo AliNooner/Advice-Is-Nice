@@ -1,25 +1,41 @@
 .card-container {
-  /* padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
   box-sizing: border-box;
-  border: 3px solid #ffe8d6;
+  /* border: 3px solid #ffe8d6; */
   padding: 30px;
   margin: 70px;
+  color: white;
+  background-color: #ddbea9;
 }
 
 .save-favorites-button {
-  border-radius: 5px;
-  border-style: solid;
+  /* border-radius: 5px;
+  border-style: solid; */
+  height: 5vw;
+  width: 10vw;
+  margin-left: 45%;
+  background-color: #ffe8d6;
+  border: none;
+  border-radius: 50px;
 }
 
 .advice-button {
+  height: 5vw;
   width: 10vw;
-  margin-left: 45%;
+  margin-left: 46%;
+  background-color: #a5a58d;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+.single-advice {
+  font-family: 'Anton', sans-serif;
+  margin-left: 31vw;
 }
 
 /* .favorite-message-tag {
