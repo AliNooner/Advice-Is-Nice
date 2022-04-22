@@ -29,50 +29,11 @@ class App extends Component {
     this.setState({ favorites: [...this.state.favorites, newAdvice] });
   };
 
-//   render() {
-//     return (
-//       <main className="App">
-//         <Nav />
-//         <p className="instructions">Click the button to see advice</p>
-//         <Card
-//           singleAdvice={this.state.singleAdvice}
-//           addFavorites={this.addFavorite}
-//         />
-//         <button className="advice-button" onClick={this.displayAdvice}>
-//           Give me advice
-//         </button>
-//         <Switch>
-//           <Route
-//             exact
-//             path="/"
-//             render={() => (
-//               <div>
-//                 <AllCards />
-//               </div>
-//             )}
-//           />
-//           <Route
-//             exact
-//             path="/favorites"
-//             render={() => <Favorites favorites={this.state.favorites} />}
-//           />
-//           <Route
-//             render={() => (
-//               <div className="no-match">
-//                 404 Error: Sorry, the URL/page you requested was not found.
-//               </div>
-//             )}
-//           />
-//         </Switch>
-//       </main>
-//     );
-//   }
-// }
 
 render() {
   return (
     <main className='App'>
-    <h1 className='title'>The Advice App</h1>
+    <h1 className='title'>Just a Thought...</h1>
       <Nav />
       <Route exact path='/' render={() => (<Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite} displayAdvice={this.displayAdvice}/>)} />
       <Route exact path='/favorites' render={() => <Favorites  favorites={this.state.favorites}/>} />

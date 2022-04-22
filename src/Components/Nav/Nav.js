@@ -6,8 +6,6 @@ const Nav = () => {
 
   return (
     <nav className='navigation'>
-      <div className='title-div'>
-      </div>
       <div className='nav-buttons'>
       <NavLink to ='/' style={{textDecoration: 'none'}}>
         <p className='home-link'>Home</p>

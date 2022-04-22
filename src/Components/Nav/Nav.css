@@ -2,8 +2,10 @@
 	height: 14vw;
 	/* padding: 1em; */
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
+	padding-bottom: 50px;
+	padding-left: 85%;
 }
 
 .title-div {

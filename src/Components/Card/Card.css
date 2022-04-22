@@ -75,9 +75,17 @@
 	border-color: #d1495b;
 }
 
+.single-advice-container {
+  margin-bottom: 12em;
+}
+
 .single-advice {
   color: white;
-  padding: 30px;;
+  /* padding: 40px; */
+  font-size: 20px;
+  /* background-color: #ecf8f8;
+  opacity: 0.5em; */
+  padding: 10px;
 }
 
 .button-container {
