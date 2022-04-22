@@ -66,13 +66,20 @@
   margin: 10px;
 }
 
-.advice-button:hover,
-.save-favorites-button:hover {
+.advice-button:hover {
   transition: 2000ms;
 	transform: translateY(10%);
 	background-color: #d1495b;
 	color: #white;
 	border-color: #d1495b;
+}
+
+.save-favorites-button:hover {
+  transition: 2000ms;
+	transform: translateY(10%);
+	background-color: #4d194d;
+	color: #white;
+	border-color: #4d194d;
 }
 
 .single-advice-container {
