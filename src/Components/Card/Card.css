@@ -34,8 +34,54 @@
 /* .single-advice {
   font-family: 'Anton', sans-serif;
   margin-left: 31vw;
+  background-color: white;
 } */
 
 .card {
+  /* border: solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .advice-button, .save-favorites-button {
+  margin: 5px;
+    width: 92px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #4a4e69;
+    border-radius: 15px;
+    font-size: 10px;
+    background-color: transparent;
+    color: white;
+} */
+
+.advice-button,
+.save-favorites-button {
+  color: white;
+  text-decoration: none;
   border: solid;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.advice-button:hover,
+.save-favorites-button:hover {
+  transition: 2000ms;
+	transform: translateY(10%);
+	background-color: #d1495b;
+	color: #white;
+	border-color: #d1495b;
+}
+
+.single-advice {
+  color: white;
+  padding: 30px;;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

@@ -7,7 +7,6 @@ const Nav = () => {
   return (
     <nav className='navigation'>
       <div className='title-div'>
-        <h1 className='title'>The Advice App</h1>
       </div>
       <div className='nav-buttons'>
       <NavLink to ='/' style={{textDecoration: 'none'}}>

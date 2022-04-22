@@ -4,7 +4,13 @@ main {
   justify-content: center;
 }
 
-.advice-button {
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* .advice-button {
   border-radius: 5px;
   border-style: solid;
-}
+} */

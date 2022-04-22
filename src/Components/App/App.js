@@ -72,6 +72,7 @@ class App extends Component {
 render() {
   return (
     <main className='App'>
+    <h1 className='title'>The Advice App</h1>
       <Nav />
       <Route exact path='/' render={() => (<Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite} displayAdvice={this.displayAdvice}/>)} />
       <Route exact path='/favorites' render={() => <Favorites  favorites={this.state.favorites}/>} />
