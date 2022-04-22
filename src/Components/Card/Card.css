@@ -93,10 +93,12 @@
   /* background-color: #ecf8f8;
   opacity: 0.5em; */
   padding: 10px;
+  /* font-family: 'Anton', sans-serif; */
 }
 
 .button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* padding-bottom: 50px; */
 }

@@ -1,10 +1,10 @@
 .navigation {
-	height: 14vw;
+	height: .25vw;
 	/* padding: 1em; */
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	padding-bottom: 50px;
+	/* padding-bottom: 50px; */
 	padding-left: 85%;
 }
 

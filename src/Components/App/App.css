@@ -8,17 +8,21 @@ h1 {
   color: white;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 75px;
   /* font-size: 70px; */
 }
 
-h2 {
+/* .title { */
+
+/* } */
+
+/* h2 {
   color: white;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
   font-size: 20px;
-}
+} */
 
 /* .advice-button {
   border-radius: 5px;
