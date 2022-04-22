@@ -3,7 +3,7 @@ import './Card.css';
 import { Route } from 'react-router-dom';
 
 
-const Card = ({singleAdvice, addFavorites}) => {
+const Card = ({singleAdvice, addFavorites, displayAdvice}) => {
 
 const saveToFavorites = () => {
   const newAdvice = {
@@ -17,6 +17,7 @@ const saveToFavorites = () => {
       <div className='card-container'>
       <p className='single-advice'>{singleAdvice}</p>
       <button className='save-favorites-button' onClick={() => saveToFavorites()} >Save to favorites</button>
+      <button className='advice-button' onClick={displayAdvice}>Advice</button>
       </div>
     </div>
 
