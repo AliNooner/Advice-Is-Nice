@@ -6,15 +6,11 @@ const Nav = () => {
 
   return (
     <nav className='navigation'>
-      <div className='title-div'>
-        <h1 className='title'>You've Got This</h1>
-        <h4>Advice for your life</h4>
-      </div>
       <div className='nav-buttons'>
-      <NavLink to ='/'>
+      <NavLink to ='/' style={{textDecoration: 'none'}}>
         <p className='home-link'>Home</p>
       </NavLink>
-      <NavLink to ='/favorites'>
+      <NavLink to ='/favorites' style={{textDecoration: 'none'}}>
         <p className='favorites-link'>Favorites</p>
       </NavLink>
       </div>
