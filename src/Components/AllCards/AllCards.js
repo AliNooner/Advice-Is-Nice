@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AllCards.css';
+// import './AllCards.css';
 import { Route } from 'react-router-dom';
 
 const AllCards = () => {
