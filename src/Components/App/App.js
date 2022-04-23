@@ -33,8 +33,8 @@ class App extends Component {
 render() {
   return (
     <main className='App'>
-    <Nav />
     <h1 className='title'>Just a Thought</h1>
+    <Nav />
       <Route exact path='/' render={() => (<Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite} displayAdvice={this.displayAdvice}/>)} />
       <Route exact path='/favorites' render={() => <Favorites  favorites={this.state.favorites}/>} />
     </main>

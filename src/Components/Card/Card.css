@@ -44,17 +44,6 @@
   justify-content: center;
 }
 
-/* .advice-button, .save-favorites-button {
-  margin: 5px;
-    width: 92px;
-    height: 40px;
-    box-shadow: 5px 5px 5px #4a4e69;
-    border-radius: 15px;
-    font-size: 10px;
-    background-color: transparent;
-    color: white;
-} */
-
 .advice-button,
 .save-favorites-button {
   color: white;
