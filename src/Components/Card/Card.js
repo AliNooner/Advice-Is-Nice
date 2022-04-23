@@ -16,7 +16,7 @@ const saveToFavorites = () => {
     <div className='card'>
       <div className='card-container'>
         <div className='single-advice-container'>
-          <p className='single-advice'>{singleAdvice}</p>
+          <h2 className='single-advice'>{singleAdvice}</h2>
         </div>
         <div className='button-container'>
           <button className='advice-button' onClick={displayAdvice}>Give Me Advice</button>

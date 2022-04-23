@@ -33,4 +33,19 @@ describe ('Feedback loop user flows', () => {
   })
 
   //add fetch testing on button click
+  //use stubbing
+  //create fixture file
+
+  // it('Should display a piece of advice on button click', () => {
+  //   cy.get('.advice-button').click()
+  //   cy.includes('.single-advice')
+  // })
+
+  it('Should display a piece of advice on button click', () => {
+    cy.intercept('https://api.adviceslip.com/advice', {fixture: 'advice-info.json'})
+    .visit('http://localhost:3002/')
+    cy.get('.advice-button').should('be.visible').click()
+    cy.wait(2000)
+    cy.get('h2').contains('Hold the door open for the next person.')
+  })
 })

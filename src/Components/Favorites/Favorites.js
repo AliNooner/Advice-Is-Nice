@@ -9,7 +9,10 @@ const Favorites = ({favorites}) => {
         <FavoriteCard fave={fave.singleAdvice}/>
     )
   })
-  return <div className='favorite-cards'>{favoriteCards}</div>
+  return <div className='favorite-cards'>
+    {!favorites.length && <h3 className='no-saved'>You have no favorites</h3>}
+    {favoriteCards}
+  </div>
 }
 
 
