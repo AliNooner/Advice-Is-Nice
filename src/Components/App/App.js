@@ -4,7 +4,6 @@ import "./App.css";
 import allAdviceData from "../../APIcalls";
 import Nav from "../Nav/Nav";
 import Card from "../Card/Card";
-import AllCards from "../AllCards/AllCards";
 import Favorites from "../Favorites/Favorites";
 
 class App extends Component {
