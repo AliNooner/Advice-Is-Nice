@@ -33,6 +33,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1 className="title">Just a Thought</h1>
+        <h3 className='description'>~ Here for when you need a litle inspiration ~</h3>
         <Nav />
         <Switch>
           <Route
