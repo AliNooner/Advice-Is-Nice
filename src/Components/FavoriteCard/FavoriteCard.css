@@ -1,5 +1,10 @@
-.favorite-card {
+.favorite-card,
+.no-saved {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.no-saved {
+  color: white;
 }
