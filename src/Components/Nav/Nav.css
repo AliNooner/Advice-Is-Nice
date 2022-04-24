@@ -1,10 +1,8 @@
 .navigation {
 	height: .25vw;
-	/* padding: 1em; */
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	/* padding-bottom: 50px; */
 	padding-left: 85%;
 }
 
@@ -20,7 +18,6 @@ h4 {
 	font-size: 1.22em;
 }
 .nav-buttons {
-	/* border-radius: 0.5em; */
 	height: 20em;
 	width: 10em;
 	display: flex;
@@ -55,8 +52,6 @@ h4 {
 	color: white;
   text-decoration: none;
 	border: solid;
-	/* background-color: #4d194d; */
-	/* opacity: 0.5; */
 	padding: 10px;
 	border-radius: 5px;
 }
