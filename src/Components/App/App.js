@@ -4,8 +4,8 @@ import "./App.css";
 import allAdviceData from "../../APIcalls";
 import Nav from "../Nav/Nav";
 import Card from "../Card/Card";
-import AllCards from "../AllCards/AllCards";
 import Favorites from "../Favorites/Favorites";
+import ErrorHandling from "../ErrorHandling/ErrorHandling";
 
 class App extends Component {
   constructor() {
@@ -29,16 +29,33 @@ class App extends Component {
     this.setState({ favorites: [...this.state.favorites, newAdvice] });
   };
 
-
-render() {
-  return (
-    <main className='App'>
-    <h1 className='title'>Just a Thought</h1>
-    <Nav />
-      <Route exact path='/' render={() => (<Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite} displayAdvice={this.displayAdvice}/>)} />
-      <Route exact path='/favorites' render={() => <Favorites  favorites={this.state.favorites}/>} />
-    </main>
-  )
-}
+  render() {
+    return (
+      <main className="App">
+        <Nav />
+        <h1 className="title">Just a Thought</h1>
+        <h3 className='description'>- Your source for advice to live bY -</h3>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <Card
+                singleAdvice={this.state.singleAdvice}
+                addFavorites={this.addFavorite}
+                displayAdvice={this.displayAdvice}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/favorites"
+            render={() => <Favorites favorites={this.state.favorites} />}
+          />
+          <Route render={() => <ErrorHandling />} />
+        </Switch>
+      </main>
+    );
+  }
 }
 export default App;
