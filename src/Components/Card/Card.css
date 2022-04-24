@@ -16,7 +16,7 @@
 }
 
 .advice-button:hover {
-  transition: 2000ms;
+  transition: 1000ms;
 	transform: translateY(10%);
 	background-color: #d1495b;
 	color: #white;
@@ -24,7 +24,7 @@
 }
 
 .save-favorites-button:hover {
-  transition: 2000ms;
+  transition: 1000ms;
 	transform: translateY(10%);
 	background-color: #4d194d;
 	color: #white;
@@ -38,7 +38,8 @@
 .single-advice {
   color: white;
   font-size: 20px;
-  padding: 10px;
+  /* padding: 10px; */
+  padding-top: 10%;
 }
 
 .button-container {

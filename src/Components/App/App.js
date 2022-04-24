@@ -32,9 +32,9 @@ class App extends Component {
   render() {
     return (
       <main className="App">
-        <h1 className="title">Just a Thought</h1>
-        <h3 className='description'>~ Here for when you need a litle inspiration ~</h3>
         <Nav />
+        <h1 className="title">Just a Thought</h1>
+        <h3 className='description'>- Your source for advice to live bY -</h3>
         <Switch>
           <Route
             exact
