@@ -10,7 +10,7 @@ const Favorites = ({favorites}) => {
     )
   })
   return <div className='favorite-cards'>
-    {!favorites.length && <h3 className='no-saved'>You have no favorites</h3>}
+    {!favorites.length && <h3 className='no-saved'>You have no favorites yet! Click the Home button to see and save your favorite advice.</h3>}
     {favoriteCards}
   </div>
 }

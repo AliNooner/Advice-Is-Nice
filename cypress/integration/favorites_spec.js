@@ -20,6 +20,18 @@ describe ('Feedback loop user flows', () => {
     cy.url().should('eq', 'http://localhost:3002/')
   })
 
+  it('Should display a favorited piece of advice on Favorites page', () => {
+    cy.intercept('https://api.adviceslip.com/advice', {fixture: 'advice-info.json'})
+    .visit('http://localhost:3002/')
+    cy.get('.advice-button').should('be.visible').click()
+    cy.wait(2000)
+    cy.get('.save-favorites-button').should('be.visible').click()
+    cy.wait(2000)
+    .visit('http://localhost:3002/favorites')
+    cy.wait(2000)
+    cy.get('h2').contains('Hold the door open for the next person.')
+  })
+
 })
 
 
