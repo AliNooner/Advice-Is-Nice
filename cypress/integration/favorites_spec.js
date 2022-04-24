@@ -20,6 +20,11 @@ describe ('Feedback loop user flows', () => {
     cy.url().should('eq', 'http://localhost:3002/')
   })
 
+  it('Should display a no-favorites message if no advice has been favorited', () => {
+    cy.visit('http://localhost:3002/favorites')
+    cy.contains('You have no favorites yet! Click the Home button to see and save your favorite advice.')
+  })
+
   it('Should display a favorited piece of advice on Favorites page', () => {
     cy.intercept('https://api.adviceslip.com/advice', {fixture: 'advice-info.json'})
     .visit('http://localhost:3002/')
@@ -33,8 +38,3 @@ describe ('Feedback loop user flows', () => {
   })
 
 })
-
-
-// test advice is on page
-
-//if saved, test all advice is on page
