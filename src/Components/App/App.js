@@ -28,16 +28,29 @@ class App extends Component {
     this.setState({ favorites: [...this.state.favorites, newAdvice] });
   };
 
-
-render() {
-  return (
-    <main className='App'>
-    <h1 className='title'>Just a Thought</h1>
-    <Nav />
-      <Route exact path='/' render={() => (<Card singleAdvice={this.state.singleAdvice} addFavorites={this.addFavorite} displayAdvice={this.displayAdvice}/>)} />
-      <Route exact path='/favorites' render={() => <Favorites  favorites={this.state.favorites}/>} />
-    </main>
-  )
-}
+  render() {
+    return (
+      <main className="App">
+        <h1 className="title">Just a Thought</h1>
+        <Nav />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <Card
+              singleAdvice={this.state.singleAdvice}
+              addFavorites={this.addFavorite}
+              displayAdvice={this.displayAdvice}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/favorites"
+          render={() => <Favorites favorites={this.state.favorites} />}
+        />
+      </main>
+    );
+  }
 }
 export default App;

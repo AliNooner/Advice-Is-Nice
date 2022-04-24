@@ -1,44 +1,4 @@
-/* .card-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .card {
-  box-sizing: border-box; */
-  /* border: 3px solid #ffe8d6; */
-  /* padding: 30px;
-  margin: 70px;
-  color: white;
-  background-color: #ddbea9;
-} */
-
-/* .save-favorites-button {
-  height: 5vw;
-  width: 10vw;
-  margin-left: 45%;
-  background-color: #ffe8d6;
-  border: none;
-  border-radius: 50px;
-} */
-
-/* .advice-button {
-  height: 5vw;
-  width: 10vw;
-  margin-left: 46%;
-  background-color: #a5a58d;
-  border: none;
-  border-radius: 50px;
-  color: white;
-} */
-
-/* .single-advice {
-  font-family: 'Anton', sans-serif;
-  margin-left: 31vw;
-  background-color: white;
-} */
-
-.card {
-  /* border: solid; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -77,17 +37,12 @@
 
 .single-advice {
   color: white;
-  /* padding: 40px; */
   font-size: 20px;
-  /* background-color: #ecf8f8;
-  opacity: 0.5em; */
   padding: 10px;
-  /* font-family: 'Anton', sans-serif; */
 }
 
 .button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* padding-bottom: 50px; */
 }
