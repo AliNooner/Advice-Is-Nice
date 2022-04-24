@@ -4,9 +4,6 @@ describe ('Main page user flow', () => {
     cy.visit('http://localhost:3000/').contains('h1', 'Just a Thought')
   })
 
-  // test buttons are on page load
-
-
   it('Should have a Home button', () => {
     cy.get('.home-link').should('have.text', 'Home').click()
   })
@@ -35,4 +32,5 @@ describe ('Main page user flow', () => {
     cy.wait(2000)
     cy.get('h2').contains('Hold the door open for the next person.')
   })
+  
 })
