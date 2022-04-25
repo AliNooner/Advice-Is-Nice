@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 import { Route } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Card = ({ singleAdvice, addFavorites, displayAdvice }) => {
   const saveToFavorites = () => {
@@ -33,3 +34,9 @@ const Card = ({ singleAdvice, addFavorites, displayAdvice }) => {
 };
 
 export default Card;
+
+Card.propTypes = {
+  singleAdvice: PropTypes.string,
+  addFavorites: PropTypes.func.isRequired,
+  displayAdvice: PropTypes.func.isRequired
+}

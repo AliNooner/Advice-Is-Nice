@@ -1,6 +1,7 @@
 import React from 'react';
 import './Favorites.css';
 import FavoriteCard from '../FavoriteCard/FavoriteCard';
+import PropTypes from 'prop-types';
 
 
 const Favorites = ({favorites}) => {
@@ -17,3 +18,7 @@ const Favorites = ({favorites}) => {
 }
 
 export default Favorites;
+
+Favorites.propTypes = {
+  favorites: PropTypes.arrayOf(PropTypes.object).isRequired
+}

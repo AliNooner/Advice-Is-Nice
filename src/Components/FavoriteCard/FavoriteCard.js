@@ -1,5 +1,6 @@
 import React from "react";
 import "./FavoriteCard.css";
+import PropTypes from 'prop-types';
 
 const FavoriteCard = ({ fave }) => {
   return (
@@ -12,3 +13,7 @@ const FavoriteCard = ({ fave }) => {
 };
 
 export default FavoriteCard;
+
+FavoriteCard.propTypes = {
+  fave: PropTypes.string.isRequired
+}
