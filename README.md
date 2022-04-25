@@ -42,20 +42,8 @@ Visit the deployed [Just a Thought!]()
 
 ## Illustrations
 
-Dashboard View:
-![Main Page](https://user-images.githubusercontent.com/92279624/164992758-8fc21d5d-eb3e-4e73-bbbb-b8beb2b61df7.png)
+![App GIF](https://user-images.githubusercontent.com/92279624/164993466-8987ad5d-e40f-4e36-aca3-b992e8a81a14.gif)
 
-View *words of wisdom* on button click:
-![View Advice on the Dashboard](https://user-images.githubusercontent.com/92279624/164992802-1992fe22-67be-452e-9a04-efd4c1a76a4d.png)
-
-Save your favorite advice:
-![Save Advice from the Dashboard](https://user-images.githubusercontent.com/92279624/164992863-e744a19a-c30d-45e4-9a8c-aa55ee1ed026.png)
-
-View your Favorites Page:
-![Favorites Page](https://user-images.githubusercontent.com/92279624/164992688-f92885e6-5d55-42ce-8de9-5c04221fb5ff.png)
-
-Error handling for a better user experience:
-![Favorte Page Error Handling](https://user-images.githubusercontent.com/92279624/164992898-d8a0c525-6fa8-4a5a-8588-9a66d971c439.png)
 
 ## Wins
   - Set an achievable MVP and reached the MVP goal
