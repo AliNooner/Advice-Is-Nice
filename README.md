@@ -21,7 +21,7 @@ When visiting the application, a user views a calming and easy-to-navigate page.
 
 ## Deployed Page
 
-Visit the deployed [Just a Thought!]()
+Visit the deployed [Just a Thought!](https://just-a-thought.herokuapp.com/)
 
 ## Learning Goals
 
@@ -30,6 +30,7 @@ Visit the deployed [Just a Thought!]()
 - Demonstrate user empathy through error handling
 - Retrieve and display from an API
 - Testing user flows using Cypress
+- Utilize PropTypes
 
 ## Technologies
   - React
